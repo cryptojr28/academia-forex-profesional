@@ -3,7 +3,6 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(title="Forex Trading Education Platform")
 
-# CORS configuration
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -22,25 +21,17 @@ async def health_check():
 
 @app.get("/api/market/news")
 async def get_market_news():
-    """Get simulated market news"""
     news = [
         {
-            "title": "EUR/USD Breaks Key Resistance",
-            "content": "EUR/USD has broken above crucial resistance level",
+            "title": "EUR/USD Rompe Resistencia Clave",
+            "content": "El EUR/USD ha roto la resistencia en 1.0850",
             "impact": "high",
             "pairs_affected": ["EURUSD"],
             "timestamp": "2025-01-07T12:00:00Z"
-        },
-        {
-            "title": "Gold Consolidates Near 2000",
-            "content": "Gold continues consolidating around 2000 level",
-            "impact": "medium", 
-            "pairs_affected": ["XAUUSD"],
-            "timestamp": "2025-01-07T10:00:00Z"
         }
     ]
     return news
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+@app.get("/api/courses")
+async def get_courses():
+    return [{"title": "Curso Básico EURUSD", "level": "beginner"}]
