@@ -35,3 +35,6 @@ async def get_market_news():
 @app.get("/api/courses")
 async def get_courses():
     return [{"title": "Curso Básico EURUSD", "level": "beginner"}]
+@app.get("/api/health")
+async def health_check():
+    return {"status": "healthy", "message": "Forex Trading Education API is running"}
