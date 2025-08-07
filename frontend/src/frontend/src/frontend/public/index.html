@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#667eea" />
+        <meta name="description" content="Academia Forex Profesional - Aprende trading desde cero hasta profesional con IA avanzada" />
+        <meta name="keywords" content="forex, trading, educación, IA, XAUUSD, GBPJPY, EURUSD, análisis técnico" />
+        <meta name="author" content="Forex Academy" />
+        
+        <!-- PWA Meta Tags -->
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="Forex Academy" />
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/icon-192.png" />
+        
+        <!-- Social Media Meta Tags -->
+        <meta property="og:title" content="Academia Forex Profesional" />
+        <meta property="og:description" content="Aprende trading de forex desde cero hasta profesional con IA avanzada" />
+        <meta property="og:image" content="%PUBLIC_URL%/icon-512.png" />
+        <meta property="og:url" content="/" />
+        <meta property="og:type" content="website" />
+        
+        <title>Academia Forex Profesional | Trading Education</title>
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+        
+        <!-- Service Worker Registration -->
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                    navigator.serviceWorker.register('/sw.js')
+                        .then(function(registration) {
+                            console.log('SW registered successfully: ', registration.scope);
+                            
+                            // Check for updates
+                            registration.addEventListener('updatefound', () => {
+                                const newWorker = registration.installing;
+                                newWorker.addEventListener('statechange', () => {
+                                    if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                                        // Show update notification
+                                        if (confirm('Nueva versión disponible. ¿Recargar para actualizar?')) {
+                                            window.location.reload();
+                                        }
+                                    }
+
