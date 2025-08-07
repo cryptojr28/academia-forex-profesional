@@ -1,0 +1,64 @@
+{
+  "short_name": "Forex Academy",
+  "name": "Academia Forex Profesional - Trading Education",
+  "description": "Aprende trading de forex desde cero hasta profesional con IA avanzada",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8xXzEpIj4KPHJlY3Qgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxOTIiIGZpbGw9InVybCgjcGFpbnQwX2xpbmVhcl8xXzEpIi8+CjxwYXRoIGQ9Ik05NiA0OEM3OC4zMjc5IDQ4IDY0IDYyLjMyNzkgNjQgODBWMTEyQzY0IDEyOS42NzIgNzguMzI3OSAxNDQgOTYgMTQ0QzExMy42NzIgMTQ0IDEyOCAxMjkuNjcyIDEyOCAxMTJWODBDMTI4IDYyLjMyNzkgMTEzLjY3MiA0OCA5NiA0OFoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik04MCA4MEg4OFY5NkgtODBIODBWODBaIiBmaWxsPSIjNjY3RUVBIi8+CjxwYXRoIGQ9Ik0xMDQgODhIMTEyVjEwNEgxMDRWODhaIiBmaWxsPSIjNjY3RUVBIi8+CjxwYXRoIGQ9Ik04MCA5NkMxMDAuODcgOTYgMTAyIDE1Mi4zNzUgMTIwIDEwNCIgc3Ryb2tlPSIjNzY0QkEyIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9nPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzFfMSIgeDE9IjAiIHkxPSIwIiB4Mj0iMTkyIiB5Mj0iMTkyIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiM2NjdFRUEiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNzY0QkEyIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxjbGlwUGF0aCBpZD0iY2xpcDBfMV8xIj4KPHJlY3Qgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxOTIiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+",
+      "type": "image/svg+xml",
+      "sizes": "192x192"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8xXzEpIj4KPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIGZpbGw9InVybCgjcGFpbnQwX2xpbmVhcl8xXzEpIi8+CjxwYXRoIGQ9Ik0yNTYgMTI4QzIwOS4zNzEgMTI4IDE3MiAxNjUuMzcxIDE3MiAyMTJWMzAwQzE3MiAzNDYuNjI5IDIwOS4zNzEgMzg0IDI1NiAzODRDMzAyLjYyOSAzODQgMzQwIDM0Ni42MjkgMzQwIDMwMFYyMTJDMzQwIDE2NS4zNzEgMzAyLjYyOSAxMjggMjU2IDEyOFoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0yMTYgMjEySDIzNlYyNTZIMjE2VjIxMloiIGZpbGw9IiM2NjdFRUEiLz4KPHBhdGggZD0iTTI3NiAyMzJIMjk2VjI3NkgyNzZWMjMyWiIgZmlsbD0iIzY2N0VFQSIvPgo8cGF0aCBkPSJNMjE2IDI1NkMyNjcuMDI0IDI1NiAyNzIgNDA2LjUgMzIwIDI3NiIgc3Ryb2tlPSIjNzY0QkEyIiBzdHJva2Utd2lkdGg9IjYiLz4KPC9nPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzFfMSIgeDE9IjAiIHkxPSIwIiB4Mj0iNTEyIiB5Mj0iNTEyIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiM2NjdFRUEiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNzY0QkEyIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxjbGlwUGF0aCBpZD0iY2xpcDBfMV8xIj4KPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#667eea",
+  "background_color": "#764ba2",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "categories": ["education", "finance", "business"],
+  "lang": "es",
+  "screenshots": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjU2OCIgdmlld0JveD0iMCAwIDMyMCA1NjgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMjAiIGhlaWdodD0iNTY4IiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfMV8xKSIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwMCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Rm9yZXggQWNhZGVteTwvdGV4dD4KPHR5cGUgeD0iMTYwIiB5PSIzMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkFwcmVuZGUgdHJhZGluZyBkZSBmb3JleDwvdGV4dD4KPC9zdmc+",
+      "sizes": "320x568",
+      "type": "image/svg+xml",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Cursos",
+      "short_name": "Cursos",
+      "description": "Accede a los cursos de trading",
+      "url": "/?view=courses",
+      "icons": [
+        {
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHZpZXdCb3g9IjAgMCA5NiA5NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiBmaWxsPSIjNjY3RUVBIi8+CjwvdXN2Zz4=",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Análisis IA",
+      "short_name": "IA",
+      "description": "Análisis con inteligencia artificial",
+      "url": "/?view=ai",
+      "icons": [
+        {
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHZpZXdCb3g9IjAgMCA5NiA5NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiBmaWxsPSIjNzY0QkEyIi8+CjwvdXN2Zz4=",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+}
