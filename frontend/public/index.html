@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#667eea" />
+        <meta name="description" content="Academia Forex Profesional - Aprende trading desde cero hasta profesional con IA avanzada" />
+        <meta name="keywords" content="forex, trading, educación, IA, XAUUSD, GBPJPY, EURUSD, análisis técnico" />
+        <meta name="author" content="Forex Academy" />
+        
+        <!-- PWA Meta Tags -->
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="Forex Academy" />
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/icon-192.png" />
+        
+        <!-- Social Media Meta Tags -->
+        <meta property="og:title" content="Academia Forex Profesional" />
+        <meta property="og:description" content="Aprende trading de forex desde cero hasta profesional con IA avanzada" />
+        <meta property="og:image" content="%PUBLIC_URL%/icon-512.png" />
+        <meta property="og:url" content="/" />
+        <meta property="og:type" content="website" />
+        
+        <title>Academia Forex Profesional | Trading Education</title>
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+        
+        <!-- Service Worker Registration -->
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                    navigator.serviceWorker.register('/sw.js')
+                        .then(function(registration) {
+                            console.log('SW registered successfully: ', registration.scope);
+                            
+                            // Check for updates
+                            registration.addEventListener('updatefound', () => {
+                                const newWorker = registration.installing;
+                                newWorker.addEventListener('statechange', () => {
+                                    if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                                        // Show update notification
+                                        if (confirm('Nueva versión disponible. ¿Recargar para actualizar?')) {
+                                            window.location.reload();
+                                        }
+                                    }
+                                });
+                            });
+                            
+                            // Enable background sync
+                            if ('sync' in window.ServiceWorkerRegistration.prototype) {
+                                registration.sync.register('forex-data-sync');
+                            }
+                            
+                            // Request notification permission
+                            if ('Notification' in window && Notification.permission === 'default') {
+                                Notification.requestPermission().then(permission => {
+                                    console.log('Notification permission:', permission);
+                                });
+                            }
+                        })
+                        .catch(function(error) {
+                            console.log('SW registration failed: ', error);
+                        });
+                });
+            }
+            
+            // PWA Install prompt
+            let deferredPrompt;
+            window.addEventListener('beforeinstallprompt', (e) => {
+                e.preventDefault();
+                deferredPrompt = e;
+                
+                // Show custom install button
+                const installBtn = document.createElement('button');
+                installBtn.textContent = '📱 Instalar App';
+                installBtn.style.cssText = `
+                    position: fixed;
+                    bottom: 20px;
+                    left: 20px;
+                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                    color: white;
+                    border: none;
+                    padding: 0.75rem 1rem;
+                    border-radius: 25px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+                    z-index: 10000;
+                    font-size: 0.9rem;
+                `;
+                
+                installBtn.addEventListener('click', async () => {
+                    if (deferredPrompt) {
+                        deferredPrompt.prompt();
+                        const result = await deferredPrompt.userChoice;
+                        if (result.outcome === 'accepted') {
+                            console.log('User accepted PWA install');
+                        }
+                        deferredPrompt = null;
+                        installBtn.remove();
+                    }
+                });
+                
+                document.body.appendChild(installBtn);
+                
+                // Auto-hide after 10 seconds
+                setTimeout(() => {
+                    if (installBtn && installBtn.parentNode) {
+                        installBtn.remove();
+                    }
+                }, 10000);
+            });
+            
+            // Handle app installation
+            window.addEventListener('appinstalled', () => {
+                console.log('PWA installed successfully');
+                deferredPrompt = null;
+            });
+        </script>
+    </body>
+</html>
